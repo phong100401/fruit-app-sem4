@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.MyHomeFragment">
+
+    <TextView
+        android:id="@+id/text_view_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:fontFamily="@font/lobster"
+        android:text="Đặt là có  -  Gọi là nghe    +0967948934       Đặt là có  -  Gọi là nghe    +0967948934   Đặt là có - Gọi là nghe  +0967948934       Đặt là có  -  Gọi là nghe    +0967948934"
+        android:textColor="@color/red"
+        android:background="@color/backgroungColor"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_margin="10dp"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"/>
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/circle_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        app:ci_drawable="@drawable/bg_indicatior" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="484dp">
+
+        <ImageView
+            android:id="@+id/banchay"
+            android:layout_width="48dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/banchay"/>
+        <TextView
+            android:id="@+id/spbcn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Sản Phẩm Bán Chạy Nhất"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_toRightOf="@+id/banchay"
+            />
+        <TextView
+            android:id="@+id/cm_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hoa quả tươi ngon - giá tốt mỗi ngày"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:layout_marginLeft="60dp"
+            android:layout_below="@+id/spbcn"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_fruits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:paddingTop="20dp"
+            tools:listitem="@layout/fruits_item" />
+    </RelativeLayout>
+</LinearLayout>

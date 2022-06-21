@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red">
+
+    <RelativeLayout
+        android:id="@+id/bac_dim_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C0000000"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:text="Cảm ơn bạn đã mua hàng! Xin vui lòng chuyển khoản vào số tài khoản xxxx-xxxx-xxxx nếu muốn thanh toán trước!"/>
+
+</RelativeLayout>
